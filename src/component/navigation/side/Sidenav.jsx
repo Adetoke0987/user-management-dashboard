@@ -1,6 +1,7 @@
 import React from 'react'
 import Links from '../../links/Links'
 import {AiOutlineHome, AiOutlineLogin} from "react-icons/ai"
+import './side.css'
 
 
 
@@ -16,7 +17,7 @@ const Sidenav = () => {
     <div>
       {
         path.map(({to,label,icon})=>(
-            <Links/>
+            <Links key={label} to={to} label={label} icon={icon} />
         ))
       }
     </div>

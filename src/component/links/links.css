@@ -1,0 +1,12 @@
+#links{
+    color: whitesmoke;
+}
+
+
+.sidenav- {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    padding: 10px 0; /* Padding for each link */
+    color: red; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+  }
