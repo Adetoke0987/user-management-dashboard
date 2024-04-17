@@ -7,7 +7,7 @@ const UserContext = ({children}) => {
         username: "",
         email: "",
         imgUrl: ""
-      })
+      });
     
 
       const updateUser = (data)=> {

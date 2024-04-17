@@ -6,6 +6,7 @@ const Admin = () => {
     const { createUser, updateUser } = useContext(formContext);
 
 
+
     const { email, username, imgUrl } = createUser;
 
     const handleChange = (e) => {
@@ -19,6 +20,11 @@ const Admin = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        updateUser({
+            username: "",
+            email: "",
+            imgUrl: ""
+        })
         console.log(createUser);
     }
 

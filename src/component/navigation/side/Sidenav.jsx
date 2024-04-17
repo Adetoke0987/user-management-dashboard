@@ -1,17 +1,21 @@
 import React from 'react'
 import Links from '../../links/Links'
-import {AiOutlineHome, AiOutlineLogin} from "react-icons/ai"
+import { IoHome } from "react-icons/io5";
+import { IoMdLogIn } from "react-icons/io";
+import { IoMdSettings } from "react-icons/io";
+import { RiAdminFill } from "react-icons/ri";
+import { FaUsers } from "react-icons/fa";
 import './side.css'
 
 
 
 const Sidenav = () => {
     const path = [
-        {to:"/", label:"Home", icon:<AiOutlineHome/>},
-        {to:"/admin", label:"Admin", icon:<AiOutlineLogin/>},
-        {to:"/login", label:"Login", icon: <AiOutlineLogin/>},
-        {to:"/setting", label:"Settings", icon:<AiOutlineLogin/>},
-        {to:"/user", label:"Users", icon:<AiOutlineLogin/>}
+        {to:"/", label:"Home", icon:<IoHome/>},
+        {to:"/admin", label:"Admin", icon:<RiAdminFill/>},
+        {to:"/login", label:"Login", icon: <IoMdLogIn/>},
+        {to:"/setting", label:"Settings", icon:<IoMdSettings/>},
+        {to:"/user", label:"Users", icon:<FaUsers/>}
     ]
   return (
     <div>
